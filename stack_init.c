@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   stack_init.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 16:46:24 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/08 13:51:20 by akinzeli         ###   ########.fr       */
+/*   Updated: 2024/04/13 13:19:55 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,10 @@ void	stack_init(t_stack_node **a, char **argv, bool flag_argc_2)
 		nbr = ft_atol(argv[i]);
 		if (nbr > INT_MAX || nbr < INT_MIN)
 			error_free(a, argv, flag_argc_2);
-		if (error_repetition(*a, (int)nbr))
+		else if (error_repetition(*a, (int)nbr))
 			error_free(a, argv, flag_argc_2);
 		append_node(a, (int)nbr);
-		i++;
+		++i;
 	}
 	if (flag_argc_2)
 		free_matrix(argv);

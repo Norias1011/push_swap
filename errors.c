@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   errors.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 16:56:12 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/08 15:55:49 by akinzeli         ###   ########.fr       */
+/*   Updated: 2024/04/13 13:20:04 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,15 @@ void	free_matrix(char **argv)
 {
 	int	i;
 
-	i = -1;
+	i = 0;
 	if (NULL == argv || NULL == *argv)
 		return ;
 	while (argv[i])
-		free(argv[i++]);
-	free(argv - 1);
+	{
+		free(argv[i]);
+		i++;
+	}
+	free(argv);
 }
 
 int	error_repetition(t_stack_node *a, int nbr)
