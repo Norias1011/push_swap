@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 14:28:33 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/12 14:50:34 by marvin           ###   ########.fr       */
+/*   Updated: 2024/04/13 16:05:36 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,21 @@ static void	reverse_rotate(t_stack_node **stack)
 	*stack = last;
 	last->next->prev = last;
 }
+
 void	rra(t_stack_node **a, bool checker)
 {
 	reverse_rotate(a);
 	if (!checker)
 		write(1, "rra\n", 4);
 }
+
 void	rrb(t_stack_node **b, bool checker)
 {
 	reverse_rotate(b);
 	if (!checker)
 		write(1, "rrb\n", 4);
 }
+
 void	rrr(t_stack_node **a, t_stack_node **b, bool checker)
 {
 	reverse_rotate(a);

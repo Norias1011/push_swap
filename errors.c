@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 16:56:12 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/13 13:20:04 by marvin           ###   ########.fr       */
+/*   Updated: 2024/04/13 16:06:43 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int	error_syntax(char *str_nbr)
 	}
 	return (0);
 }
+
 void	error_free(t_stack_node **a, char **argv, bool flag_argc_2)
 {
 	free_stack(a);

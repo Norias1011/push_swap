@@ -6,12 +6,12 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 14:24:32 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/12 14:50:37 by marvin           ###   ########.fr       */
+/*   Updated: 2024/04/13 16:08:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP
-# define PUSH_SWAP
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
 
 # include "./printf/ft_printf.h"
 # include <limits.h>

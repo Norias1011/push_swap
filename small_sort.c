@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   small_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 13:44:46 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/08 14:55:12 by akinzeli         ###   ########.fr       */
+/*   Updated: 2024/04/13 16:05:45 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ bool	stack_sorted(t_stack_node *stack)
 	}
 	return (true);
 }
+
 static t_stack_node	*find_highest(t_stack_node *stack)
 {
 	int				highest;
@@ -44,6 +45,7 @@ static t_stack_node	*find_highest(t_stack_node *stack)
 	}
 	return (highest_node);
 }
+
 void	tiny_sort(t_stack_node **a)
 {
 	t_stack_node	*highest_node;
@@ -56,6 +58,7 @@ void	tiny_sort(t_stack_node **a)
 	if ((*a)->value > (*a)->next->value)
 		sa(a, false);
 }
+
 void	handle_five(t_stack_node **a, t_stack_node **b)
 {
 	while (stack_len(*a) > 3)

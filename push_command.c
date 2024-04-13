@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_command.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 14:29:18 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/08 14:55:08 by akinzeli         ###   ########.fr       */
+/*   Updated: 2024/04/13 16:06:05 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,14 @@ static void	push(t_stack_node **dest, t_stack_node **src)
 		*dest = node_to_push;
 	}
 }
+
 void	pa(t_stack_node **a, t_stack_node **b, bool checker)
 {
 	push(a, b);
 	if (!checker)
 		write(1, "pa\n", 3);
 }
+
 void	pb(t_stack_node **b, t_stack_node **a, bool checker)
 {
 	push(b, a);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   swap_command.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 14:09:01 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/08 14:21:04 by akinzeli         ###   ########.fr       */
+/*   Updated: 2024/04/13 16:05:55 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ void	sa(t_stack_node **a, bool checker)
 	if (!checker)
 		write(1, "sa\n", 3);
 }
+
 void	sb(t_stack_node **b, bool checker)
 {
 	swap(b);

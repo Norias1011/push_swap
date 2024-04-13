@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_init.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 15:06:47 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/08 15:09:17 by akinzeli         ###   ########.fr       */
+/*   Updated: 2024/04/13 16:05:11 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ static void	set_target_node(t_stack_node *a, t_stack_node *b)
 		b = b->next;
 	}
 }
+
 void	set_price(t_stack_node *a, t_stack_node *b)
 {
 	int	len_a;
@@ -79,6 +80,7 @@ void	set_price(t_stack_node *a, t_stack_node *b)
 		b = b->next;
 	}
 }
+
 void	set_cheapest(t_stack_node *b)
 {
 	long			best_match_value;
@@ -98,6 +100,7 @@ void	set_cheapest(t_stack_node *b)
 	}
 	best_match_node->cheapest = true;
 }
+
 void	init_nodes(t_stack_node *a, t_stack_node *b)
 {
 	set_current_position(a);

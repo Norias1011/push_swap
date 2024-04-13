@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 14:23:41 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/13 13:15:53 by marvin           ###   ########.fr       */
+/*   Updated: 2024/04/13 16:06:25 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	main(int ac, char *av[])
 {
 	t_stack_node	*a;
 	t_stack_node	*b;
-	char	**temp;
+	char			**temp;
 
 	a = NULL;
 	b = NULL;

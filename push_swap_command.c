@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_command.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 14:54:49 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/08 15:05:58 by akinzeli         ###   ########.fr       */
+/*   Updated: 2024/04/13 16:07:27 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ static void	reverse_rotate_both(t_stack_node **a, t_stack_node **b,
 	set_current_position(*a);
 	set_current_position(*b);
 }
+
 void	finish_rotation(t_stack_node **stack, t_stack_node *top_node,
 		char stack_name)
 {
@@ -50,6 +51,7 @@ void	finish_rotation(t_stack_node **stack, t_stack_node *top_node,
 		}
 	}
 }
+
 static void	move_nodes(t_stack_node **a, t_stack_node **b)
 {
 	t_stack_node	*cheapest_node;
@@ -64,6 +66,7 @@ static void	move_nodes(t_stack_node **a, t_stack_node **b)
 	finish_rotation(a, cheapest_node->target_node, 'a');
 	pa(a, b, false);
 }
+
 void	push_swap(t_stack_node **a, t_stack_node **b)
 {
 	t_stack_node	*smallest;

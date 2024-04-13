@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 16:46:24 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/13 13:19:55 by marvin           ###   ########.fr       */
+/*   Updated: 2024/04/13 16:07:53 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ static long	ft_atol(const char *str)
 	}
 	return (num * sign);
 }
+
 /* Create the stack with the command line values.
 The checks are included in this function */
 void	stack_init(t_stack_node **a, char **argv, bool flag_argc_2)

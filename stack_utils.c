@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   stack_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 10:43:21 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/08 14:54:54 by akinzeli         ###   ########.fr       */
+/*   Updated: 2024/04/13 16:05:27 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ t_stack_node	*find_last_node(t_stack_node *head)
 		head = head->next;
 	return (head);
 }
+
 void	append_node(t_stack_node **stack, int nbr)
 {
 	t_stack_node	*node;
