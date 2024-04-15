@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   errors.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: akinzeli <akinzeli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 16:56:12 by akinzeli          #+#    #+#             */
-/*   Updated: 2024/04/13 16:06:43 by marvin           ###   ########.fr       */
+/*   Updated: 2024/04/15 11:24:43 by akinzeli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ void	error_free(t_stack_node **a, char **argv, bool flag_argc_2)
 	free_stack(a);
 	if (flag_argc_2)
 		free_matrix(argv);
-	ft_printf("Error\n", EXIT_FAILURE);
+	ft_printf("Error\n");
+	exit(1);
 }
 
 void	free_stack(t_stack_node **stack)
